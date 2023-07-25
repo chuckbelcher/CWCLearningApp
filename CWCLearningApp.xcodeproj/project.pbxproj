@@ -14,6 +14,7 @@
 		32BD7CA22A6F5B6B00216583 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CA12A6F5B6B00216583 /* ContentModel.swift */; };
 		32BD7CA82A6F64F400216583 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 32BD7CA72A6F64F400216583 /* style.html */; };
 		32BD7CAA2A6F661C00216583 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CA92A6F661C00216583 /* Models.swift */; };
+		32BD7CAC2A6F6A0900216583 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CAB2A6F6A0900216583 /* DataService.swift */; };
 		32F261122A6F5FA20018DD35 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F261112A6F5FA20018DD35 /* data.json */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		32BD7CA12A6F5B6B00216583 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		32BD7CA72A6F64F400216583 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		32BD7CA92A6F661C00216583 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		32BD7CAB2A6F6A0900216583 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		32F261112A6F5FA20018DD35 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		32BD7C9D2A6F5A7F00216583 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				32BD7CAB2A6F6A0900216583 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				32BD7C8E2A6F59CD00216583 /* CWCLearningApp.swift in Sources */,
 				32BD7CA22A6F5B6B00216583 /* ContentModel.swift in Sources */,
 				32BD7CAA2A6F661C00216583 /* Models.swift in Sources */,
+				32BD7CAC2A6F6A0900216583 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

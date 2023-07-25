@@ -41,14 +41,14 @@ struct Test: Decodable, Identifiable {
     var id: Int
     var image: String
     var description: String
-    var questioin: [Question]
+    var questions: [Question]
     
 }
 
 struct Question: Decodable, Identifiable {
     
     var id: Int
-    var content: String
+    var content: String = "test"
     var correctIndex: Int
     var answers: [String]
     
