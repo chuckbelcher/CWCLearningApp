@@ -12,6 +12,7 @@
 		32BD7C922A6F59CF00216583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BD7C912A6F59CF00216583 /* Assets.xcassets */; };
 		32BD7C952A6F59CF00216583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BD7C942A6F59CF00216583 /* Preview Assets.xcassets */; };
 		32BD7CA22A6F5B6B00216583 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CA12A6F5B6B00216583 /* ContentModel.swift */; };
+		32BD7CA82A6F64F400216583 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 32BD7CA72A6F64F400216583 /* style.html */; };
 		32F261122A6F5FA20018DD35 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F261112A6F5FA20018DD35 /* data.json */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		32BD7C912A6F59CF00216583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32BD7C942A6F59CF00216583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32BD7CA12A6F5B6B00216583 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		32BD7CA72A6F64F400216583 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		32F261112A6F5FA20018DD35 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				32F261112A6F5FA20018DD35 /* data.json */,
+				32BD7CA72A6F64F400216583 /* style.html */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				32BD7C952A6F59CF00216583 /* Preview Assets.xcassets in Resources */,
 				32F261122A6F5FA20018DD35 /* data.json in Resources */,
+				32BD7CA82A6F64F400216583 /* style.html in Resources */,
 				32BD7C922A6F59CF00216583 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
