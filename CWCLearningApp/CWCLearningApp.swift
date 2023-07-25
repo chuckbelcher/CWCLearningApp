@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct CWCLearningAppApp: App {
+struct CWCLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
