@@ -19,48 +19,18 @@ struct ContentView: View {
                 
                 if contentModel.currentModule != nil {
                     
-                    ForEach(contentModel.currentModule!.content.lessons) {lesson in
+                    ForEach(0..<contentModel.currentModule!.content.lessons.count, id: \.self) {index in
                         //Display Lesson Card
-                        ZStack {
-                            
-                            Rectangle()
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .shadow(radius: 5)
-                                .frame(height: 66)
-                            
-                            HStack {
-                                Text("\(lesson.id)")
-                                    .font(.title)
-                                
-                                Spacer()
-                                
-                                VStack (alignment: .leading){
-                                    
-                                    Text(lesson.title)
-                                        .font(.title)
-                                    Text(lesson.duration)
-                                }
-                            }
-                            .padding()
-                            
-                        }
+                        ContentViewRow(index: index)
                         
                     }
                 }
                 
             }
+            .padding()
+            .navigationTitle("Learn \(contentModel.currentModule?.category ?? "")")
             
         }
         
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        ContentView()
-            .environmentObject(ContentModel())
-            
     }
 }

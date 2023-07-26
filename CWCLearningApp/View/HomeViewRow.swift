@@ -43,7 +43,7 @@ struct HomeViewRow: View {
                     //Description
                     Text(description)
                         .padding(.bottom)
-                        .font(.subheadline)
+                        .font(Font.system(size: 12))
                     
                     //Icons
                     HStack {

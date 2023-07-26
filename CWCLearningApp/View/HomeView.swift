@@ -12,14 +12,14 @@ struct HomeView: View {
     @EnvironmentObject var contentModel: ContentModel
     
     var body: some View {
-
+        
         NavigationView {
             VStack (alignment: .leading) {
                 Text("What do you want to do today?")
                     .padding(.leading, 15)
                 
                 ScrollView {
-                    LazyVStack {
+                    LazyVStack  {
                         
                         ForEach(contentModel.modules) { module in
                             
@@ -32,18 +32,22 @@ struct HomeView: View {
                                         })
                                 } label: {
                                     HomeViewRow(image: module.content.image, category: " Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                        .multilineTextAlignment(.leading)
                                 }
-
                                 
-                                
-                                //Test Card
-                                HomeViewRow(image: module.test.image, category: "\(module.category) Assessment", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
+                            
+                            
+                            
+                            
+                            //Test Card
+                            HomeViewRow(image: module.test.image, category: "\(module.category) Assessment", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
                             }
                             
                         }
                         
                     }
                     .padding()
+                    .accentColor(.black)
                 }
             }
             .navigationTitle("Get Started Now")

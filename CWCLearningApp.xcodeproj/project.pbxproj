@@ -17,6 +17,7 @@
 		32BD7CAC2A6F6A0900216583 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CAB2A6F6A0900216583 /* DataService.swift */; };
 		32BD7CAE2A7018AC00216583 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CAD2A7018AC00216583 /* HomeViewRow.swift */; };
 		32BD7CB02A7065FC00216583 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CAF2A7065FC00216583 /* ContentView.swift */; };
+		32BD7CB22A709DCA00216583 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CB12A709DCA00216583 /* ContentViewRow.swift */; };
 		32F261122A6F5FA20018DD35 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F261112A6F5FA20018DD35 /* data.json */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		32BD7CAB2A6F6A0900216583 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		32BD7CAD2A7018AC00216583 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		32BD7CAF2A7065FC00216583 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32BD7CB12A709DCA00216583 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		32F261112A6F5FA20018DD35 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				32BD7CAF2A7065FC00216583 /* ContentView.swift */,
+				32BD7CB12A709DCA00216583 /* ContentViewRow.swift */,
 				32BD7C8F2A6F59CD00216583 /* HomeView.swift */,
 				32BD7CAD2A7018AC00216583 /* HomeViewRow.swift */,
 			);
@@ -213,6 +216,7 @@
 				32BD7CB02A7065FC00216583 /* ContentView.swift in Sources */,
 				32BD7CA22A6F5B6B00216583 /* ContentModel.swift in Sources */,
 				32BD7CAA2A6F661C00216583 /* Models.swift in Sources */,
+				32BD7CB22A709DCA00216583 /* ContentViewRow.swift in Sources */,
 				32BD7CAE2A7018AC00216583 /* HomeViewRow.swift in Sources */,
 				32BD7CAC2A6F6A0900216583 /* DataService.swift in Sources */,
 			);
