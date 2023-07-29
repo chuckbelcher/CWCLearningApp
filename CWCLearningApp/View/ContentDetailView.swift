@@ -26,7 +26,6 @@ struct ContentDetailView: View {
             //TODO: Description
             
             
-            //TODO: Next Lesson Button
             
             if contentModel.hasNextLesson() {
                 
@@ -56,10 +55,3 @@ struct ContentDetailView: View {
         
     }
 }
-
-//struct ContentDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentDetailView()
-//            //.environmentObject(ContentModel())
-//    }
-//}
