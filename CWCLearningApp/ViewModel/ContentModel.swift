@@ -12,6 +12,7 @@ class ContentModel: ObservableObject {
     @Published var modules:[Module]
     @Published var currentModule: Module?
     @Published var currentLesson: Lesson?
+    @Published var currentLessonDescription = NSAttributedString()
     var currentModuleIndex = 0
     var currentLessonIndex = 0
     
@@ -53,12 +54,14 @@ class ContentModel: ObservableObject {
         
         //Set current Lesson
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        currentLessonDescription = createAttributedDescription(currentLesson!.explanation)
     }
     
     func nextLesson() {
         currentLessonIndex += 1
         if currentLessonIndex  < currentModule!.content.lessons.count {
             currentLesson = currentModule!.content.lessons[currentLessonIndex]
+            currentLessonDescription = createAttributedDescription(currentLesson!.explanation)
         } else {
             currentLesson = nil
             currentLessonIndex = 0
@@ -69,5 +72,32 @@ class ContentModel: ObservableObject {
         return currentLessonIndex + 1 < currentModule!.content.lessons.count
    
     }
+    
+    private func createAttributedDescription(_ htmlString: String) -> NSAttributedString {
+        
+        var descriptionAttributedString = NSAttributedString()
+        var data = Data()
+        
+        //Add styling
+        if styleData != nil {
+            data.append(styleData!)
+        }
+        
+        data.append(Data(htmlString.utf8))
+        
+        //Convert to attribyted string
+        do {
+            let attributedString = try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+            
+            descriptionAttributedString = attributedString
+            
+        } catch {
+            print("Can't trurn html into attributed string")
+        }
+        
+        return descriptionAttributedString
+        
+    }
+    
     
 }

@@ -24,7 +24,7 @@ struct ContentDetailView: View {
             }
             
             //TODO: Description
-            
+            CodeTextView()
             
             
             if contentModel.hasNextLesson() {
@@ -52,6 +52,6 @@ struct ContentDetailView: View {
             
         }
         .padding()
-        
+        .navigationTitle(lesson?.title ?? "")
     }
 }
