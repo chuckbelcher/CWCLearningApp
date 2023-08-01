@@ -23,6 +23,7 @@
 		32BD7CB92A7422D900216583 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD7CB82A7422D900216583 /* Constants.swift */; };
 		32F201712A75BAFC009C4D06 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F201702A75BAFC009C4D06 /* CodeTextView.swift */; };
 		32F261122A6F5FA20018DD35 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32F261112A6F5FA20018DD35 /* data.json */; };
+		32F261142A7948E20018DD35 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F261132A7948E20018DD35 /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		32BD7CB82A7422D900216583 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		32F201702A75BAFC009C4D06 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		32F261112A6F5FA20018DD35 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		32F261132A7948E20018DD35 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				32F201702A75BAFC009C4D06 /* CodeTextView.swift */,
 				32BD7CAF2A7065FC00216583 /* ContentView.swift */,
+				32F261132A7948E20018DD35 /* RectangleCard.swift */,
 				32BD7CB12A709DCA00216583 /* ContentViewRow.swift */,
 				32BD7CB32A7411C700216583 /* ContentDetailView.swift */,
 				32BD7C8F2A6F59CD00216583 /* HomeView.swift */,
@@ -241,6 +244,7 @@
 				32BD7CAA2A6F661C00216583 /* Models.swift in Sources */,
 				32BD7CB22A709DCA00216583 /* ContentViewRow.swift in Sources */,
 				32BD7CAE2A7018AC00216583 /* HomeViewRow.swift in Sources */,
+				32F261142A7948E20018DD35 /* RectangleCard.swift in Sources */,
 				32BD7CAC2A6F6A0900216583 /* DataService.swift in Sources */,
 				32F201712A75BAFC009C4D06 /* CodeTextView.swift in Sources */,
 			);

@@ -31,11 +31,8 @@ struct ContentDetailView: View {
                 
                 ZStack {
                     
-                    Rectangle()
+                    RectangleCard(color: Color.blue)
                         .frame(height: 48)
-                        .foregroundColor(.green)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
                     
                     Button {
                         contentModel.nextLesson()
@@ -50,11 +47,8 @@ struct ContentDetailView: View {
                 //Show complete button
                 ZStack {
                     
-                    Rectangle()
+                    RectangleCard(color: Color.green)
                         .frame(height: 48)
-                        .foregroundColor(.green)
-                        .cornerRadius(10)
-                        .shadow(radius: 5)
                     
                     Button {
                         contentModel.resetCurrentContentSelected()
