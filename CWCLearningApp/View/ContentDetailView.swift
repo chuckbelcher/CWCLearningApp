@@ -38,7 +38,6 @@ struct ContentDetailView: View {
                         .shadow(radius: 5)
                     
                     Button {
-                        print("Buttong for next lesson pressed")
                         contentModel.nextLesson()
                     } label: {
                         Text("Next Lesson: " + contentModel.currentModule!.content.lessons[contentModel.currentLessonIndex + 1].title)

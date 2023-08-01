@@ -25,15 +25,17 @@ struct HomeView: View {
                             
                             VStack (spacing: 20) {
                                 //Learning Card
-                                NavigationLink {
-                                    ContentView()
+                                NavigationLink(
+                                    destination: ContentView()
                                         .onAppear(perform: {
                                             contentModel.beginModule(module.id)
-                                        })
-                                } label: {
+                                        }),
+                                    tag: module.id,
+                                    selection: $contentModel.currentContentSelected,
+                                 label: {
                                     HomeViewRow(image: module.content.image, category: " Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                         .multilineTextAlignment(.leading)
-                                }
+                                })
 
                             //Test Card
                             HomeViewRow(image: module.test.image, category: "\(module.category) Assessment", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
