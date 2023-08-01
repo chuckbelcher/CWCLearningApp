@@ -46,6 +46,25 @@ struct ContentDetailView: View {
                     }
                 }
                 
+            } else {
+                //Show complete button
+                ZStack {
+                    
+                    Rectangle()
+                        .frame(height: 48)
+                        .foregroundColor(.green)
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                    
+                    Button {
+                        contentModel.resetCurrentContentSelected()
+                    } label: {
+                        Text("Complete")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                }
+
             }
 
             

@@ -74,6 +74,10 @@ class ContentModel: ObservableObject {
    
     }
     
+    func resetCurrentContentSelected() {
+        return currentContentSelected = nil
+    }
+    
     private func createAttributedDescription(_ htmlString: String) -> NSAttributedString {
         
         var descriptionAttributedString = NSAttributedString()
